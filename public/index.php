@@ -3,6 +3,8 @@
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
+// returns time in microseconds to calculate the time required to start the application.
+
 define('LARAVEL_START', microtime(true));
 
 /*
@@ -44,6 +46,8 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
+
+// require_once makes sure to exclude any other call instances to include the app.php file.
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
 $kernel = $app->make(Kernel::class);
