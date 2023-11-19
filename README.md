@@ -43,3 +43,10 @@ Includes sending actions (ususally form actions) from a bad website to a good on
 represents current request being handled. It is injected by default.
 
 -   it provides a series of methods, properties to inspect and consume the current request object.
+
+### Response
+
+`All controllers should return a valid response.`
+A valid response includes:
+
+-

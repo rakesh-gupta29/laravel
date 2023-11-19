@@ -83,3 +83,35 @@ Route::get("/route-demo/{id}", function (Request $request, string $id) {
     return view("welcome", ["message" => "learning laravel"]);
 
 });
+
+
+Route::get("/sample-return", function () {
+    // use response method to build the response.
+    return response("hello", 200)->header("Content-Type", "text/plain");
+    // use header method to attach headers in the response
+    // use cookie method to attach cookies.
+
+
+    //  response object has methods to redicrect to a route through a path or a named path or to a previous route using the back function or even methods for a controller classes.
+
+
+    // we can use the eloquoent models as parameters for the routes
+    // models and collection of models can be passed as parameters in response method. they will be converted to json.
+});
+
+
+Route::get("/get-profile", function () {
+    return response()->download("profile_img.jpeg");
+});
+Route::get("/get-file", function () {
+    return response()->file("dummy_form.pdf");
+});
+
+Route::get("/string-from-macro", function () {
+    // we can create macros to define functions
+    return response()->capsString("hello world");
+});
+
+
+
+// we can create a macro for defining methods in the Response object

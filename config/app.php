@@ -169,6 +169,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\AllowedCountriesServiceProviders::class,
+        App\Providers\StringResponse::class,
     ])->toArray(),
 
     /*
