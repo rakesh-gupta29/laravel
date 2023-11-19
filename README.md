@@ -30,5 +30,10 @@ Functions which form a link in the chain of functions from request to response.
 -   assigning one middleware to a group of routes
 -   withoutMiddleware function helps to exclude the middleware from a group.
 -   multiple middlewares can be grouped together and applied at once. e.g. web and api middleware groups.
--   to determine the order in which they are executed, we can decide their priority in an array called middlewarePriority in kernel file.
--   passing additional parameter to the middlewares.
+-   to determine the order in which they are executed, we can decide their priority
+    in an array called middlewarePriority in kernel file.
+-   passing additional parameter to the middlewares and then retreiving them in the controller functions
+
+### CSRF Protection
+
+Includes sending actions (ususally form actions) from a bad website to a good one - with data relevant to good ones.

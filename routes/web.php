@@ -35,9 +35,6 @@ Route::get('/user/{id}/{name}', function (string $id, string $name) {
 
 
 Route::get("/dummy", function (Request $request) {
-    // $counter = $request->input('counter');
-    dump($request->all());
-
     return view("welcome", ["message" => "something"]);
 })->middleware("dummy:something");
 
