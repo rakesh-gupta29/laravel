@@ -49,4 +49,10 @@ represents current request being handled. It is injected by default.
 `All controllers should return a valid response.`
 A valid response includes:
 
--
+### Views
+
+-   view method renders and sends a HTML response.
+-   We can consume some data in the template.
+-   We can make a data available in all templates.
+-   view composers can be used rto fire a callback whenever a view is rendered.
+-   cache the templates while deploying to production and clear the cache during prodcution

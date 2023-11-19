@@ -111,7 +111,11 @@ Route::get("/string-from-macro", function () {
     // we can create macros to define functions
     return response()->capsString("hello world");
 });
-
-
+Route::get("/cars", function () {
+    return view("cars");
+});
+Route::get("/car-detail", function () {
+    return view("car-details");
+});
 
 // we can create a macro for defining methods in the Response object

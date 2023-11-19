@@ -170,6 +170,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\AllowedCountriesServiceProviders::class,
         App\Providers\StringResponse::class,
+        App\Providers\GlobalViewData::class,
+        App\Providers\ViewSidebar::class,
     ])->toArray(),
 
     /*
