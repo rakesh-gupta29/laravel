@@ -52,3 +52,34 @@ Route::get("/controller-single-action/{isAuthorised?}", DemoControllerSingleActi
 // ::singleton and ::resources have their api counterparts too. these methods allow nesting too as per names. children and submodules.
 
 // we can relate the resources with data models too.
+
+
+// request parameter is injected.
+Route::get("/route-demo/{id}", function (Request $request, string $id) {
+    $path = $request->path(); // get current path
+    $url = $request->url(); // get url or fullUrl
+
+    // methods to verify that path matches the pattern. refer doc for a complete list.
+
+    // get request methods and get request headers.
+    // check that the request has a header or not.
+    // get the value of token for request object too.
+    // get value of the content type and other accepts value.
+
+
+    // get all data from the incoming request
+    $allInputs = $request->all();
+    // retrieve some field
+    // we can collect all of them using a collection and iterate through them.
+
+    $namuserName = $request->input('name');
+
+    $queryName = $request->query('name');
+
+    // there are multiple methods to retreive cookies, files and other form of data.
+
+    // we may retrive the files and store them in the storage.
+
+    return view("welcome", ["message" => "learning laravel"]);
+
+});

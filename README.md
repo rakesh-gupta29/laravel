@@ -37,3 +37,9 @@ Functions which form a link in the chain of functions from request to response.
 ### CSRF Protection
 
 Includes sending actions (ususally form actions) from a bad website to a good one - with data relevant to good ones.
+
+### Request
+
+represents current request being handled. It is injected by default.
+
+-   it provides a series of methods, properties to inspect and consume the current request object.
