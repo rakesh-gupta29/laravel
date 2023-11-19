@@ -56,3 +56,13 @@ A valid response includes:
 -   We can make a data available in all templates.
 -   view composers can be used rto fire a callback whenever a view is rendered.
 -   cache the templates while deploying to production and clear the cache during prodcution
+
+### Blade templates
+
+Laravel's own template engine.
+
+-   it has directives to render the data. they are built-in functions for common use cases.
+    TODO:
+-   learn to create laravel components and use them to build dynamic components.
+-   learn to create a good website with the templating by laravel only. it should feel like a SPA.
+-   how can I use vue.js to create something significant?
