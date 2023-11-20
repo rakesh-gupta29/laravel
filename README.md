@@ -66,3 +66,15 @@ Laravel's own template engine.
 -   learn to create laravel components and use them to build dynamic components.
 -   learn to create a good website with the templating by laravel only. it should feel like a SPA.
 -   how can I use vue.js to create something significant?
+
+### Asset Bundling & URL Generation : Pending
+
+### Sessions
+
+Storing the sessions to persist user state.
+
+flashed data
+session storage implementations
+making a counter for number of times this page was visited
+
+reading more regarding how the session storage data is handled and lifespan of those items
