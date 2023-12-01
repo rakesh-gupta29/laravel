@@ -82,4 +82,35 @@ reading more regarding how the session storage data is handled and lifespan of t
 
 ---
 
+## Doubts
+Sessions:
+
+Session hijacking
+
+Session blocking
+
+Validation:
+
+XHR requests
+
+Does @error directive will need to reload the page
+
+Making validation service provider as per names and data model fields: have data fields and then define valuation rules for them
+
+Skim through the validation rules once and built in validation functions
+
+Global handler for errors as per type of errors
+
+Making a custom validator and handle the error the same
+
+Global error handlers for errors
+
+Logging with custom data
+
+Read more regarding the logging and how concurrent and high load logging is handled 
+
+Making a command to send push notifications
+
+Go through the code base of gavyam and sleek to check how she is making http requests
+
 
