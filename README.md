@@ -78,3 +78,8 @@ session storage implementations
 making a counter for number of times this page was visited
 
 reading more regarding how the session storage data is handled and lifespan of those items
+
+
+---
+
+
